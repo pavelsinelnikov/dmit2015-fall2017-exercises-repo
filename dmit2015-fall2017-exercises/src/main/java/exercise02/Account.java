@@ -22,6 +22,18 @@ public class Account {
 		}
 	}
 	
+	
+
+	@Override
+	public String toString() {
+		return "Account [id=" + id + ", balance=" + balance + ", annualInterestRate=" + annualInterestRate
+				+ ", dateCreated=" + dateCreated + ", name=" + name + ", transactions=" + transactions
+				+ ", getMonthlyInterestRate()=" + getMonthlyInterestRate() + ", getMonthlyInterest()="
+				+ getMonthlyInterest() + ", getId()=" + getId() + ", getBalance()=" + getBalance()
+				+ ", getAnnualInterestRate()=" + getAnnualInterestRate() + ", getDateCreated()=" + getDateCreated()
+				+ ", getName()=" + getName() + ", getTransactions()=" + getTransactions() + "]";
+	}
+
 	public void deposit(double amount, String description) {
 		if (amount > 0) {
 			balance += amount;

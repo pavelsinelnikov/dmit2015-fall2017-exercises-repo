@@ -4,6 +4,12 @@ import java.util.Date;
 
 public class Account {
 	
+	@Override
+	public String toString() {
+		return "Account [id=" + id + ", balance=" + balance + ", annualInterestRate=" + annualInterestRate
+				+ ", dateCreated=" + dateCreated + "]";
+	}
+
 	public double getMonthlyInterestRate() {
 		return annualInterestRate / 12 / 100;
 	}
